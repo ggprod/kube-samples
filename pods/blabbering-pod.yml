@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: blabbering-container
+  labels:
+    app: blabbering-container
+spec:
+  containers:
+    - name: blabbering-container
+      image: gcr.io/<PROJECT_ID>/blabbering-container:latest
