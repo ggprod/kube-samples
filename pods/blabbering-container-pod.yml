@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: blabbering-container-pod
+  labels:
+    app: blabbering-container-pod
+spec:
+  containers:
+    - name: blabbering-container
+      image: gcr.io/<PROJECT_ID>/blabbering-container:latest
+      tty: true
+      stdin: true
